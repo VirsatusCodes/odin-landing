@@ -27,20 +27,26 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     margin: 0 0 0 100px;
+    padding-top: 35px;
 }
 
 .topright{
     display: flex;
     margin: 0 100px 0 0;
-}
-
-ul{
-    display: flex;
+    padding-top: 35px;
+    justify-content: first baseline;
 }
 
 .botleft{
     display: flex;
     margin: 0 0 100px 100px;
+    flex-flow: column nowrap;
+}
+
+.big{
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;  
 }
 
 .botright{
@@ -49,7 +55,24 @@ ul{
 }
 
 .botright img {
-    max-width: 400px;
+    max-width: 600px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.text{
+    font-weight: 18px;
+    color: #E5E7EB;
 }
 
 
