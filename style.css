@@ -2,4 +2,60 @@ body {
     font-family: Roboto, sans-serif;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
 }
+
+.header {
+    display: flex;
+    background-color: #1F2937;
+    flex-flow: row wrap;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+.topleft, .topright, .botleft, .botright {
+    display: flex;
+    min-width: 800px;
+    max-width: 800px;
+    min-height: 300px;
+    max-height: 300px;
+    flex: 1 0 auto;
+}
+
+.topleft{
+    font-size: 24px;
+    color: #F9FAF8;
+    margin: 0 0 0 100px;
+}
+
+.topright{
+    display: flex;
+    margin: 0 100px 0 0;
+}
+
+ul{
+    display: flex;
+}
+
+.botleft{
+    display: flex;
+    margin: 0 0 100px 100px;
+}
+
+.botright{
+    display: flex;
+    margin: 0 100px 100px 0;
+}
+
+.botright img {
+    max-width: 400px;
+}
+
+
+/* struggled alot to figure out how to make my header centered in two layers of content,
+gap didnt work well as i couldnt center it after so far my solution which may be
+thrifty is to force set the container size so that they are forced to be a double
+layer and then styling the content from there, still need to dress up different
+components and adjust sizes of things. also will want to further check margins and if
+and when they are necessary, will tinker with stuff more later! */
