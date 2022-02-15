@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     font-family: Roboto, sans-serif;
     margin: 0;
@@ -9,71 +11,79 @@ body {
 .header {
     display: flex;
     background-color: #1F2937;
-    flex-flow: row wrap;
-    flex: 1 0 auto;
+    flex-flow: column;
+    padding: 20px 210px 120px 210px;
+}
+
+.top, .bot, .left, .right{
+    display: flex;
+    flex: 1 0 50%;
+}
+
+.bot .left{
+    gap: 10px;
+}
+
+.left, .right{
+    max-width: 600px ;
+}
+
+.top, .bot {
     justify-content: center;
 }
 
-.topleft, .topright, .botleft, .botright {
-    display: flex;
-    min-width: 800px;
-    max-width: 800px;
-    min-height: 300px;
-    max-height: 300px;
-    flex: 1 0 auto;
+.top{
+    margin-bottom: 60px;
 }
 
-.topleft{
+.left{
     font-size: 24px;
-    color: #F9FAF8;
-    margin: 0 0 0 100px;
-    padding-top: 35px;
+    color: #f9FAF8;
+    flex-flow: column;
 }
 
-.topright{
+.right{
+    justify-content: end;
+}
+
+.header img {
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+ul {
     display: flex;
-    margin: 0 100px 0 0;
-    padding-top: 35px;
-    justify-content: first baseline;
+    list-style: none;
+    gap: 15px;
 }
 
-.botleft{
-    display: flex;
-    margin: 0 0 100px 100px;
-    flex-flow: column nowrap;
-}
-
-.big{
-  font-size: 48px;
-  font-weight: bolder;
-  color: #F9FAF8;  
-}
-
-.botright{
-    display: flex;
-    margin: 0 100px 100px 0;
-}
-
-.botright img {
-    max-width: 600px;
-}
-
-ul{
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
-}
-
-a{
+a {
     text-decoration: none;
     font-size: 18px;
-    color: #E5E7EB;
-}
+    color: #e5e7eb;
+  }
 
-.text{
-    font-weight: 18px;
-    color: #E5E7EB;
-}
+  .big{
+      font-size: 48px;
+      font-weight: bolder;
+      color: #f9FAF8;
+  }
+
+  .text{
+      font-size: 18px;
+      color: #e5e7eb;
+  }
+
+  button{
+     background-color: #3882F6;
+     color: #f9FAF8;
+     border-radius: 10px;
+     padding: 7px 25px 7px 25px;
+     border: none;
+     font-size: 20px;
+  }
 
 
 /* struggled alot to figure out how to make my header centered in two layers of content,
