@@ -8,6 +8,8 @@ body {
     flex-flow: column nowrap;
 }
 
+/* header begings*/
+
 .header {
     display: flex;
     background-color: #1F2937;
@@ -17,7 +19,7 @@ body {
 
 .top, .bot, .left, .right{
     display: flex;
-    flex: 1 0 50%;
+    flex: 1 1 50%;
 }
 
 .bot .left{
@@ -85,10 +87,41 @@ a {
      font-size: 20px;
   }
 
+  /* header ends, though some text stuff is up there, layer one begins below*/
 
-/* struggled alot to figure out how to make my header centered in two layers of content,
-gap didnt work well as i couldnt center it after so far my solution which may be
-thrifty is to force set the container size so that they are forced to be a double
-layer and then styling the content from there, still need to dress up different
-components and adjust sizes of things. also will want to further check margins and if
-and when they are necessary, will tinker with stuff more later! */
+  .layerone{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .layeronetext{
+      display: flex;
+      font-size: 36px;
+      font-weight: 900;
+      color: #1F2937;
+      justify-content: center;
+      padding: 50px;
+  }
+
+  .boxes{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 100px;
+  }
+
+  .layerone img{
+      max-width: 150px;
+      max-height: 150px;
+      border-radius: 15px;
+      border: 3px solid rgb(67, 67, 255);
+  }
+
+  .boxone, .boxtwo, .boxthree, .boxfour {
+      display: flex;
+      max-width: 200px;
+      flex-flow: column wrap;
+      text-align: center;
+  }
+
+  /* layerone ends here layertwo starts below*/
