@@ -21,7 +21,7 @@ body {
 
 .top, .bot, .left, .right{
     display: flex;
-    flex: 1 1 50%;
+    flex: 0 0 50%;
 }
 
 .bot .left{
@@ -164,6 +164,7 @@ a {
       background-color:#3882F6 ;
       border-radius: 10px;
       padding: 30px;
+      flex: 0 0 auto;
   }
 
   .west, .east{
@@ -188,6 +189,15 @@ a {
       font-size: 20px;
       color:#f9FAF8 ;
       font-weight: 600;
+  }
+
+  /* footer begins*/
+
+  .footer{
+      display: flex;
+      background-color: #1F2937;
+      justify-content: center;
+      padding: 25px;
   }
 
   /* make note of the fact that when making the screen smaller
